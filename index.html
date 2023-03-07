@@ -44,6 +44,21 @@
             </blockquote>
           </figure>
         </div>
+         <button id="theme-toggle">Switch to Dark Mode</button>
+         <script>
+            const themeToggle = document.querySelector('#theme-toggle');
+            const body = document.body;
+
+            themeToggle.addEventListener('click', () => {
+              body.classList.toggle('dark-mode');
+
+              if (body.classList.contains('dark-mode')) {
+                themeToggle.textContent = 'Switch to Light Mode';
+              } else {
+                themeToggle.textContent = 'Switch to Dark Mode';
+              }
+            });
+        </script>
         <hr class="mainPageLine" />
         <div class="mainPageMid">
           <div class="projects">
