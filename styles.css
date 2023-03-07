@@ -18,8 +18,13 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-  background-color: #121212;
+  background-color: #181818;
   color: #f5f5f5;
+}
+
+.toggleButton {
+  position: absolute; 
+  right: 0;
 }
 
 .mainPageTop {
