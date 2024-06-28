@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Ishaan Bhatia</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYVFC91SYF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-CYVFC91SYF');
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Ishaan Bhatia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYVFC91SYF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CYVFC91SYF');
+  </script>
+</head>
 
-  <body>
-    <header>
-      <div>
-        <title> </title>
-      </div>
-   <div class="toggleButton">
+<body>
+  <header>
+    <div>
+      <title> </title>
+    </div>
+    <div class="toggleButton">
       <div class="switch" id="theme-toggle">
         <div class="slider round"></div>
       </div>
     </div>
-    </header>
-    <div class="mainPage">
-      <main>
-        <div class="mainPageTop">
-          <div class="profilePicture">
-            <img
-              src="Saitama-3.png"
-              alt="saitama"
-              srcset=""
-            />
+  </header>
+  <div class="mainPage">
+    <main>
+      <div class="mainPageTop">
+        <div class="profilePicture">
+          <img src="Saitama-3.png" alt="saitama" />
+        </div>
+      </div>
+      <div class="intro">
+        <figure>
+          <blockquote>
+            <p>
+              I am a budding dev at Airbus. I usually try to build useful
+              stuff but mostly it's just random stuff.
+            </p>
+          </blockquote>
+        </figure>
+      </div>
+      <script>
+        const themeToggle = document.querySelector('#theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+        });
+      </script>
+      <hr class="mainPageLine" />
+      <div class="mainPageMid">
+        <div class="projects">
+          <h3>Projects</h3>
+          <div>
+            <div>Lotta stuff coming up....</div>
           </div>
         </div>
-        <div class="intro">
-          <figure>
-            <blockquote>
-              <p>
-                I am a budding dev at Airbus. I usually try to build useful
-                stuff but mostly it's just random stuff.
-              </p>
-            </blockquote>
-          </figure>
-        </div>
-        <script>
-          const themeToggle = document.querySelector('#theme-toggle');
-          const body = document.body;
-          themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-          });
-       </script>
-        <hr class="mainPageLine" />
-        <div class="mainPageMid">
-          <div class="projects">
-            <h3>Projects</h3>
+        <div>
+          <div class="education">
+            <h3>Education</h3>
             <div>
-              <div>Lotta stuff coming up....</div>
-            </div>
-          </div>
-          <div>
-            <div class="education">
-              <h3>Education</h3>
               <div>
-                <div>
-                  Masters in Computer Science from Queen Mary Institue of
-                  London.
-                </div>
-                <div>Bachelors in Computer Application from MIT-WPU.</div>
+                Masters in Computer Science from Queen Mary Institue of
+                London.
               </div>
-            </div>
-          </div>
-          <div>
-            <div class="connect">
-              <h3>Connect</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ishaan-bhatia-959700171/"
-                  >
-                    Linkedin
-                  </a>
-                </li>
-                <li><a href="https://github.com/IB-Git/"> Github </a></li>
-                <li>
-                  <a href="https://ishaanbhatia.site/"> Website </a>
-                </li>
-                <li> 
-                  <a href="./epiphany_with_errors.html"> Blog: Epiphany with Errors </a> 
-                </li>
-              </ul>
+              <div>Bachelors in Computer Application from MIT-WPU.</div>
             </div>
           </div>
         </div>
-      </main>
-    </div>
-  </body>
+        <div>
+          <div class="connect">
+            <h3>Connect</h3>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/ishaan-bhatia-959700171/">Linkedin</a>
+              </li>
+              <li><a href="https://github.com/IB-Git/"> Github </a></li>
+              <li><a href="https://ishaanbhatia.site/"> Website </a></li>
+              <li><a href="./epiphany_with_errors.html"> Blog: Epiphany with Errors </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
