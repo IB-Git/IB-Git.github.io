@@ -48,20 +48,13 @@
             </blockquote>
           </figure>
         </div>
-         <script>
-            const themeToggle = document.querySelector('#theme-toggle');
-            const body = document.body;
-
-            themeToggle.addEventListener('click', () => {
-              body.classList.toggle('dark-mode');
-
-              if (body.classList.contains('dark-mode')) {
-                themeToggle.textContent = 'Switch to Light Mode';
-              } else {
-                themeToggle.textContent = 'Switch to Dark Mode';
-              }
-            });
-        </script>
+        <script>
+          const themeToggle = document.querySelector('#theme-toggle');
+          const body = document.body;
+          themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+          });
+       </script>
         <hr class="mainPageLine" />
         <div class="mainPageMid">
           <div class="projects">
